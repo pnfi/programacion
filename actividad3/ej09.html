@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Uso del if(){}</title>
+    <link rel="stylesheet" type="text/css" href="../css/estilos.css">
+    <script type="text/javascript" src="../js/contenido.js"></script>
+    <link rel="icon" href="../img/favicon.png" sizes="16x16" type="image/png">
+</head>
+<body>
+<header class="container jumbotron text-center">
+<script type="text/javascript">header(); banner();</script>
+</header>
+
+<section class="container-fluid">
+<content class="row">
+<div class="col m-3 ">
+<h5>Uso del if(){}</h5>
+Se usa para verificar el contenido de una variable, es una condicional que significa <b>"si se cumple esto hacer aquello"</b><br>
+Contenido <br>
+<!--====Ejemplo-->
+<hr><!--Ejemplo-->
+<!--====Ejemplo-->
+Ejemplo:<br>
+<span class="col jumbotron d-flex justify-content-center">
+<script type="text/javascript">
+    var hora = prompt('Me puedes decir la Hora de la 0 a la 23 ?');
+    if(hora >= 0 && hora <= 5 ){document.write('Felíz Madrugada <br>')}
+    if(hora >= 6 && hora <= 11 ){document.write('Buen día <br>')}
+    if(hora >= 12 && hora <= 18 ){document.write('Buenas Tardes <br>')}
+    if(hora >= 19 && hora <= 23 ){document.write('Buenas Noches <br>')}
+    if(hora > 23 ){document.write('Pusiste algo mal en tu respuesta... de la hora <br>')}
+
+    var dia = prompt('Dame un Numero del 1 al 7 y te daré un día de la semana');
+    if(dia==1){document.write ('El número '+ dia + ' corresponde al día Domingo')}
+    if(dia==2){document.write ('El número '+ dia + ' corresponde al día Lunes')}
+    if(dia==3){document.write ('El número '+ dia + ' corresponde al día Martes')}
+    if(dia==4){document.write ('El número '+ dia + ' corresponde al día Miercoles')}
+    if(dia==5){document.write ('El número '+ dia + ' corresponde al día Jueves')}
+    if(dia==6){document.write ('El número '+ dia + ' corresponde al día Viernes')}
+    if(dia==7){document.write ('El número '+ dia + ' corresponde al día Sabado')}
+    if(dia>7){document.write ('Pusiste algo mal en tu respuesta... del día')}
+</script>
+</span>
+
+<!--====Código-->
+<hr><!--Código-->
+<!--====Código-->
+Código:
+<pre><code>
+&ltscript type="text/javascript"&gt
+    var hora = prompt('Me puedes decir la Hora de la 0 a la 23 ?');
+    if(hora >= 0 && hora <= 5 ){document.write('Felíz Madrugada &ltbr&gt')}
+    if(hora >= 6 && hora <= 11 ){document.write('Buen día &ltbr&gt')}
+    if(hora >= 12 && hora <= 18 ){document.write('Buenas Tardes &ltbr&gt')}
+    if(hora >= 19 && hora <= 23 ){document.write('Buenas Noches &ltbr&gt')}
+    if(hora > 23 ){document.write('Pusiste algo mal en tu respuesta... de la hora &ltbr&gt')}
+
+    var dia = prompt('Dame un Numero del 1 al 7 y te daré un día de la semana');
+    if(dia==1){document.write ('El número '+ dia + ' corresponde al día Domingo')}
+    if(dia==2){document.write ('El número '+ dia + ' corresponde al día Lunes')}
+    if(dia==3){document.write ('El número '+ dia + ' corresponde al día Martes')}
+    if(dia==4){document.write ('El número '+ dia + ' corresponde al día Miercoles')}
+    if(dia==5){document.write ('El número '+ dia + ' corresponde al día Jueves')}
+    if(dia==6){document.write ('El número '+ dia + ' corresponde al día Viernes')}
+    if(dia==7){document.write ('El número '+ dia + ' corresponde al día Sabado')}
+    if(dia>7){document.write ('Pusiste algo mal en tu respuesta... del día')}
+&lt/script&gt
+</code></pre>
+</div>
+</content>
+</section>
+</body>
+</html>

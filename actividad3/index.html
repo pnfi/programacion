@@ -1,42 +1,29 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Actividad 3</title>
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="../css/estilos.css">
+    <script type="text/javascript" src="../js/contenido.js"></script>
+    <link rel="icon" href="../img/favicon.png" sizes="16x16" type="image/png">
 </head>
 <body>
-<header class="container-fluid jumbotron jumbotron-fluid text-center">
-	<h4 class="display-4">Ejemplos Practicos de JavaScript</h4>
-	<p class="lead">Esta Hoja contiene ejemplos de ejercicios básicos sobre lo que se puede hacer con javascript</p>
-	<img src="../img/iconos/485-html-five.png">
-	<img src="../img/iconos/487-css3.png">
-	<img src="../img/iconos/488-git.png">
-	<img src="../img/iconos/386-terminal.png">
+<header class="container jumbotron text-center">
+<script type="text/javascript">header(); banner();</script>
 </header>
 
-<section class="container row ">
+<div class="container">
+<section class="row">
 <!--Menu de los ejemplos-->
-	<nav class="col-12 col-sm-5">
-<a class="btn btn-success btn-block" href="sobre_javascript.html" role="button" target="_blank">Sobre JavaScript<br><span class="badge">Un poco de historia</span></a>
-<a class="btn btn-danger btn-block" href="notas.html" role="button" target="_blank">Notas<br><span class="badge">Observaciones importantes</span></a>
-<a class="btn btn-info btn-block" href="ej01.html" role="button" target="_blank">Ejemplo 01<br><span class="badge">document.write</span></a>
-<a class="btn btn-info btn-block" href="ej02.html" role="button" target="_blank">Ejemplo 02<br><span class="badge">Alertas</span></a>
-<a class="btn btn-info btn-block" href="ej03.html" role="button" target="_blank">Ejemplo 03<br><span class="badge">Nombrar una variable</span></a>
-<a class="btn btn-info btn-block" href="ej04.html" role="button" target="_blank">Ejemplo 04<br><span class="badge">Capturar una variable con prompt</span></a>
-<a class="btn btn-info btn-block" href="ej05.html" role="button" target="_blank">Ejemplo 05<br><span class="badge">Operaciones matemáticas</span></a>
-<a class="btn btn-info btn-block" href="ej06.html" role="button" target="_blank">Ejemplo 06<br><span class="badge">Capturar 2 variables y sumarlas</span></a>
-<a class="btn btn-info btn-block disabled" href="#" role="button" target="_blank">Ejemplo 07</a>
-<a class="btn btn-info btn-block disabled" href="#" role="button" target="_blank">Ejemplo 08</a>
-<a class="btn btn-info btn-block disabled" href="#" role="button" target="_blank">Ejemplo 09</a>
-<a class="btn btn-info btn-block disabled" href="#" role="button" target="_blank">Ejemplo 10</a>
-	</nav>
-
+<nav class="col-12 col-sm-5 ">
+	<script type="text/javascript">menu();</script>
+</nav>
 <!--Iframe Contenido de los ejemplos-->
-	<content class="col-12 col-sm-7" text-justify>
+	<content class="col-12 col-sm-7 text-justify" >
+		<span class="badge badge-warning text-wrap m-1 d-block"><img src="../img/iconos/185-clipboard.png" width="32px" height="auto"> El menú y el Header de estos documentos HTML estan hechos con JavaScript.</span><hr>
+
+
 <b>Resumen</b><br>
 El lenguaje .js es muy parecido a php y muy necesario para hacer que las páginas webs tengan interacción con el usuario. para lograr esto se deben estudiar las diferentes palabras reservadas y tener en cuenta las posivilidades para validaciones que se pueden hacer. <br>
 ---<br>
@@ -48,6 +35,7 @@ Entre otras cosas el nombre de JavaScript fue un prestamo en los inicios de este
 	</content>
 
 </section>
+</div>
 <script src="../js/jquery-3.4.1.js"></script>
 <script src="../js/popper.min.js"></script>
 <script src="../js/bootstrap.min.js"></script>

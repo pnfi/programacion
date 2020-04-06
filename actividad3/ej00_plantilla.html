@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Ejemplo 03</title>
+    <title>Plantilla</title>
     <link rel="stylesheet" type="text/css" href="../css/estilos.css">
     <script type="text/javascript" src="../js/contenido.js"></script>
     <link rel="icon" href="../img/favicon.png" sizes="16x16" type="image/png">
@@ -13,30 +13,34 @@
 <script type="text/javascript">header(); banner();</script>
 </header>
 
-<section class="container">
-	<h5>Ejemplo 03 - Nombrar una Variable</h5>
-<content class="row col-12 col-sm-9">
-Se nombra con la palabra reservada var<br>
+<section class="container-fluid">
+<content class="row">
+<div class="col m-3 ">
+<h5>Título</h5>
+Descripción <br>
+Contenido <br>
+<!--====Ejemplo-->
+<hr><!--Ejemplo-->
+<!--====Ejemplo-->
 Ejemplo:<br>
+<span class="col jumbotron d-flex justify-content-center">
+<script type="text/javascript">
+	var mensaje = ('Mensaje en consola');
+	console.log(mensaje);
+</script>
+</span>
 
-<div>
+<!--====Código-->
+<hr><!--Código-->
+<!--====Código-->
+Código:
 <pre><code>
 &ltscript type="text/javascript"&gt
-	var nombre = "Yunior";
-	var apellido = "Rodriguez";
-
-document.write("Hola "+nombre+" "+apellido+" Bienvenido a la primera frase con tu nombre.")
+	var mensaje = ('Mensaje en consola');
+	console.log(mensaje);
 &lt/script&gt
 </code></pre>
 </div>
-eso va a generar una linea de texto como la siguiente:<br>
-<script type="text/javascript">
-	var nombre = "Yunior";
-	var apellido = "Rodriguez";
-
-document.write("Hola "+nombre+" "+apellido+" Bienvenido a la primera frase con tu nombre");
-</script>
-
 </content>
 </section>
 </body>

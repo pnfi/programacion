@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Ejemplo 04</title>
+    <title>for(){}</title>
     <link rel="stylesheet" type="text/css" href="../css/estilos.css">
     <script type="text/javascript" src="../js/contenido.js"></script>
     <link rel="icon" href="../img/favicon.png" sizes="16x16" type="image/png">
@@ -13,25 +13,34 @@
 <script type="text/javascript">header(); banner();</script>
 </header>
 
-<span class="container jumbotron d-flex justify-content-center">
+<section class="container-fluid">
+<content class="row">
+<div class="col m-3 ">
+<h5>for(){}</h5>
+Trabajar con un Bucle (para la variable esta; mientras se cumpla esto; se seguirá haciendo aquello) <br>
+<!--====Ejemplo-->
+<hr><!--Ejemplo-->
+<!--====Ejemplo-->
+Ejemplo:<br>
+<span class="col jumbotron d-flex justify-content-center">
 <script type="text/javascript">
-	var nombre = prompt("Por favor escribes tu Nombre?");
-
-	document.write("Excelente &nbsp <b>"+nombre+"</b> &nbsp bienvenido a este ejemplo con tu nombre, capturado con prompt");
+    let contar=100;
+    for (let i=0; i<contar; i++){
+        document.write((i+1)+' - ');
+    }
 </script>
 </span>
 
-<section class="container">
-<content class="row">
-<div class="col m-3">
-<h5>Ejemplo 04 - Capturar una variable con prompt</h5>
-Se usa la funcion <b>prompt</b> <br>
-Ejemplo:<br>
+<!--====Código-->
+<hr><!--Código-->
+<!--====Código-->
+Código:
 <pre><code>
 &ltscript type="text/javascript"&gt
-	var nombre = prompt("Por favor escribes tu Nombre?");
-
-	document.write("Excelente &ltb&gt"+nombre+"&lt/b&gt bienvenido a este ejemplo con tu nombre, capturado con prompt");
+    let contar=100;
+    for (let i = 0; i < contar; i++){
+        document.write((i+1)+' - ');
+    }
 &lt/script&gt
 </code></pre>
 </div>

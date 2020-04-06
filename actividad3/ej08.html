@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contenedores de Variables</title>
+    <link rel="stylesheet" type="text/css" href="../css/estilos.css">
+    <script type="text/javascript" src="../js/contenido.js"></script>
+    <link rel="icon" href="../img/favicon.png" sizes="16x16" type="image/png">
+</head>
+<body>
+<header class="container jumbotron text-center">
+<script type="text/javascript">header(); banner();</script>
+</header>
+
+<section class="container-fluid">
+<content class="row">
+<div class="col m-3 ">
+<h5>var, let, constant (Contenedores de variables)</h5>
+Las variables son contenedores que pueden ser declarados con las palabras reservadas de:<br>
+<b>var</b> ==> Se usa como una variable local y externa, entre las variables y funciones. <br>
+<b>let</b> ==> Se usa como una variable local, solo funciona en cascada dentro de una variable o función. <br>
+<b>const</b> ==> Este contenedor no funciona como una variable, sino como una constante y no puede ser sustituido su contenido. <br>
+
+<!--====Ejemplo-->
+<hr><!--Ejemplo-->
+<!--====Ejemplo-->
+Ejemplo:<br>
+<span class="col jumbotron d-flex justify-content-center">
+    Para ver el ejemplo se debe ver el resultado desde la consola del navegador.
+    <a href="ej07.html">Usar console.log</a>
+<script type="text/javascript">
+    var mensajeVar = ('Mensaje en consola con contenedor var ');
+    let mensajeLet = ('Mensaje en consola con contenedor let ');
+    const mensajeConst = ('Mensaje en consola con contenedor const');
+    console.log(mensajeVar + mensajeLet + mensajeConst);
+    console.log(mensajeVar);
+    console.log(mensajeLet);
+    console.log(mensajeConst);
+</script>
+</span>
+
+<!--====Código-->
+<hr><!--Código-->
+<!--====Código-->
+Código:
+<pre><code>
+&ltscript type="text/javascript"&gt
+    var mensajeVar = ('Mensaje en consola con contenedor var ');
+    let mensajeLet = ('Mensaje en consola con contenedor let ');
+    const mensajeConst = ('Mensaje en consola con contenedor const');
+    console.log(mensajeVar + mensajeLet + mensajeConst);
+    console.log(mensajeVar);
+    console.log(mensajeLet);
+    console.log(mensajeConst);
+&lt/script&gt
+</code></pre>
+</div>
+</content>
+</section>
+</body>
+</html>
