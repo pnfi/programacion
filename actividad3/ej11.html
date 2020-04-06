@@ -41,8 +41,13 @@ numero++;
 Código:
 <pre><code>
 &ltscript type="text/javascript"&gt
-	var mensaje = ('Mensaje en consola');
-	console.log(mensaje);
+    let numero = 0;
+    let contar = prompt('Vamos a Contar, hasta que Numero te Gustaría?');
+while (numero&lt=contar) {
+    if(numero == contar){document.write(numero);}
+    else{document.write(numero + ' - ');}
+numero++;
+}
 &lt/script&gt
 </code></pre>
 </div>
