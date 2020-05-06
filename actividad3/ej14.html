@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Delegación</title>
+    <link rel="stylesheet" type="text/css" href="../css/estilos.css">
+    <script type="text/javascript" src="../js/contenido.js"></script>
+    <link rel="icon" href="../img/favicon.png" sizes="16x16" type="image/png">
+</head>
+<body>
+<header class="container jumbotron text-center">
+<script type="text/javascript">header(); banner();</script>
+</header>
+
+<section class="container-fluid">
+<content class="row">
+<div class="col m-3 ">
+<h5>Delegación</h5>
+Atomatiza la funcionalidad de los elementos HTML para que sea dinamico y sus selecciones no sean manuales.<br>
+<!--====Ejemplo-->
+<hr><!--Ejemplo-->
+<!--====Ejemplo-->
+Ejemplo:<br>
+<span id="ejemplo" class="col jumbotron d-flex justify-content-center">
+<div class="container-fluid text-center">
+<p>Estos botones tienen la funcion de cambiar el color de fondo.</p>
+<button class="btn btn-info" id="mostrarBotones14">Mostrar Botones</button>
+    <div id="botones14">
+    </div>
+</div>
+</span>
+
+<!--====Código-->
+<hr><!--Código-->
+<!--====Código-->
+Código:
+<pre><code>
+
+&ltspan id="ejemplo" class="col jumbotron d-flex justify-content-center"&gt
+&ltdiv class="container-fluid text-center"&gt
+&ltp&gtEstos botones tienen la funcion de cambiar el color de fondo.&lt/p&gt
+&ltbutton class="btn btn-info" id="mostrarBotones14"&gtMostrar Botones&lt/button&gt
+    &ltdiv id="botones14"&gt
+    &lt/div&gt
+&lt/div&gt
+&lt/span&gt
+
+
+&ltscript type="text/javascript"&gt
+
+const mostrarBotones14 = document.querySelector('#mostrarBotones14');
+const botones14 = document.querySelector('#botones14');
+const fondo = document.querySelector('#botones14');
+
+
+(()=>{
+    mostrarBotones14.addEventListener('click', mostrarBotones);
+    botones14.addEventListener('click', delegar);
+})();
+
+function delegar(e){
+    e.preventDefault();
+    const colorBtn = e.target.classList[1];
+    switch(colorBtn){
+        case ('btn-warning') : fondo.className = 'bg-warning jumbotron'; break;
+        case ('btn-primary') : fondo.className = 'bg-primary jumbotron'; break;
+        case ('btn-danger') : fondo.className = 'bg-danger jumbotron'; break;
+        case ('btn-success') : fondo.className = 'bg-success jumbotron'; break;
+        case ('btn-dark') : fondo.className = 'bg-dark jumbotron'; break;
+    }
+}
+
+function mostrarBotones(e){
+    e.preventDefault();
+    botones14.innerHTML = `
+        &ltspan id="btnAmarillo" class="btn btn-warning"&gtFondo Amarillo&lt/span&gt
+        &ltspan id="btnAzul" class="btn btn-primary"&gtFondo Azul&lt/span&gt
+        &ltspan id="btnRojo" class="btn btn-danger"&gtFondo Rojo&lt/span&gt
+        &ltspan id="btnVerde" class="btn btn-success"&gtFondo Verde&lt/span&gt
+        &ltspan id="btnGris" class="btn btn-dark"&gtFondo Gris&lt/span&gt
+    `;
+}
+&lt/script&gt
+</code></pre>
+</div>
+</content>
+</section>
+
+<script type="text/javascript" src="../js/funciones14.js"></script>
+</body>
+</html>

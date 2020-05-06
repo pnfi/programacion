@@ -57,11 +57,24 @@ function menu(){
 	menu.push('<a class="btn btn-info btn-block" href="ej10.html" role="button" target="_blank">Ejemplo 10</br><span class="badge text-wrap">Uso del if(){} else{}</span></a>');
 	menu.push('<a class="btn btn-info btn-block" href="ej11.html" role="button" target="_blank">Ejemplo 11</br><span class="badge text-wrap">while(){}</span></a>');
 	menu.push('<a class="btn btn-info btn-block" href="ej12.html" role="button" target="_blank">Ejemplo 12</br><span class="badge text-wrap">for(){}</span></a>');
-	menu.push('<a class="btn btn-info btn-block disabled" href="ej00.html" role="button" target="_blank">Ejemplo 13</br><span class="badge text-wrap"></span></a>');
-	menu.push('<a class="btn btn-info btn-block disabled" href="ej00.html" role="button" target="_blank">Ejemplo 14</br><span class="badge text-wrap"></span></a>');
-	menu.push('<a class="btn btn-info btn-block disabled" href="ej00.html" role="button" target="_blank">Ejemplo 15</br><span class="badge text-wrap"></span></a>');
+	menu.push('<a class="btn btn-info btn-block" href="ej13.html" role="button" target="_blank">Ejemplo 13</br><span class="badge text-wrap">DOM</span></a>');
+	menu.push('<a class="btn btn-info btn-block" href="ej14.html" role="button" target="_blank">Ejemplo 14</br><span class="badge text-wrap">Delegación</span></a>');
 
 	for (var iMenu=0; iMenu<menu.length; iMenu++){
 		document.write(menu[iMenu]);
 	}
 }
+
+//
+// DOM Botones que cambian el color de fondo
+//
+
+/*
+var btnMostrarBotones = document.getElementById('btnMostrarBotones');
+console.log(btnMostrarBotones);
+
+btnMostrarBotones.onclick = function(){
+	btnMostrarBotones.style.color="red"
+}
+*/
+

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DOM</title>
+    <link rel="stylesheet" type="text/css" href="../css/estilos.css">
+    <script type="text/javascript" src="../js/contenido.js"></script>
+    <link rel="icon" href="../img/favicon.png" sizes="16x16" type="image/png">
+</head>
+<body>
+<header class="container jumbotron text-center">
+<script type="text/javascript">header(); banner();</script>
+</header>
+
+<section class="container-fluid">
+<content class="row">
+<div class="col m-3 ">
+<h5>Document Objet Model</h5>
+El DOM ayuda a hacer el FrontEnd de una página html dinámico.<br>
+<!--====Ejemplo-->
+<hr><!--Ejemplo-->
+<!--====Ejemplo-->
+Ejemplo:<br>
+<span id="ejemplo" class="col jumbotron d-flex justify-content-center">
+<div class="container-fluid text-center">
+<button id="btnMostrarBotones" class="btn btn-info" >Mostrar Botones</button>
+<button id="btnOcultarBotones" class="btn btn-light" >Ocultar Botones</button>
+<hr>
+<span id="btnAmarillo" class="btn btn-warning">Fondo Amarillo</span>
+<span id="btnAzul" class="btn btn-primary">Fondo Azul</span>
+<span id="btnRojo" class="btn btn-danger">Fondo Rojo</span>
+<span id="btnVerde" class="btn btn-success">Fondo Verde</span>
+<span id="btnGris" class="btn btn-dark">Fondo Gris</span>
+</div>
+</span>
+
+<!--====Código-->
+<hr><!--Código-->
+<!--====Código-->
+Código:
+<pre><code>
+
+&ltspan id="ejemplo" class="col jumbotron d-flex justify-content-center"&gt
+&ltdiv class="container-fluid text-center"&gt
+&ltbutton id="btnMostrarBotones" class="btn btn-info" &gtMostrar Botones&lt/button&gt
+&ltbutton id="btnOcultarBotones" class="btn btn-light" &gtOcultar Botones&lt/button&gt
+&lthr&gt
+&ltspan id="btnAmarillo" class="btn btn-warning">Fondo Amarillo&lt/span&gt
+&ltspan id="btnAzul" class="btn btn-primary">Fondo Azul&lt/span&gt
+&ltspan id="btnRojo" class="btn btn-danger">Fondo Rojo&lt/span&gt
+&ltspan id="btnVerde" class="btn btn-success">Fondo Verde&lt/span&gt
+&ltspan id="btnGris" class="btn btn-dark">Fondo Gris&lt/span&gt
+&lt/div&gt
+&lt/span&gt
+
+
+&ltscript type="text/javascript"&gt
+
+var btnMostrarBotones = document.getElementById("btnMostrarBotones");
+    var ejemplo = document.getElementById("ejemplo");
+    var btnAmarillo = document.getElementById('btnAmarillo');
+    var btnAzul = document.getElementById('btnAzul');
+    var btnRojo = document.getElementById('btnRojo');
+    var btnVerde = document.getElementById('btnVerde');
+    var btnGris = document.getElementById('btnGris');
+
+btnMostrarBotones.onclick = function(){
+    btnAmarillo.style.display="inline-block";
+    btnAzul.style.display="inline-block";
+    btnRojo.style.display="inline-block";
+    btnVerde.style.display="inline-block";
+    btnGris.style.display="inline-block";
+}
+
+btnOcultarBotones.onclick = function(){
+    btnAmarillo.style.display="none";
+    btnAzul.style.display="none";
+    btnRojo.style.display="none";
+    btnVerde.style.display="none";
+    btnGris.style.display="none";
+}
+
+btnAmarillo.onclick = function(){ejemplo.style.background="#ffc107";}
+btnAzul.onclick = function(){ejemplo.style.background="#0069d9";}
+btnRojo.onclick = function(){ejemplo.style.background="#c82333";}
+btnVerde.onclick = function(){ejemplo.style.background="#218838";}
+btnGris.onclick = function(){ejemplo.style.background="#6c757d";}
+&lt/script&gt
+</code></pre>
+</div>
+</content>
+</section>
+
+<script type="text/javascript" src="../js/funciones13.js"></script>
+</body>
+</html>
